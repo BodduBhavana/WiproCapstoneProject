@@ -1,10 +1,11 @@
 --For Administrator part, we have to make two tables. One for Branch Manager Details and another one for Branch information.
 --Table names are Branch_Manager_Details and Branch_Info.
 
---Database for Branch Manager
 
-create database "Branch_Manager_Details"
-use "Branch_Manager_Details"
+create database "Administrator_Purpose"
+use "Administrator_Purpose"
+
+--Table for Branch Manager
 
 create table Branch_Manager_Data (
 	BMID numeric(9) Primary Key,
@@ -40,10 +41,8 @@ VALUES ('12', 'Chandra Prabhu P', 'Indore', '9191919191');
 
 select * from Branch_Manager_Data
 
---Database for Branch Info
+--Table for Branch Info
 
-create database "Branch_Information"
-use "Branch_Information"
 
 create table Branch_Info (
 	Branch_ID numeric(9) Not Null,
